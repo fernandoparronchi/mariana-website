@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM - Estética Integral | Manos, Mirada y Piel</title>
+    <meta name="description"
+        content="Centro de Estética Integral especializado en manicura, pedicura, cejas, pestañas, tratamientos faciales y depilación. Experiencia premium.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-js"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="MM Logo">
+                <span>MM</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#portfolio">Galería</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#contacto" class="btn btn-primary">Reservar turno</a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-menu-btn"><i data-lucide="x"></i></button>
+        <a href="#servicios">Servicios</a>
+        <a href="#portfolio">Galería</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto" class="btn btn-primary">Reservar turno</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="glow-effect top-left"></div>
+        <div class="glow-effect bottom-right"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <div class="badge">
+                    <span class="dot"></span>
+                    Estética premium en manos, mirada y piel
+                </div>
+
+                <h1>
+                    MM <br>
+                    <span class="gradient-text">Estética integral</span>
+                    <span class="highlight">que se nota.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Especialista en manos y pies, cejas y pestañas, faciales y depilación.
+                    Atención personalizada, resultados prolijos y experiencia premium.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary btn-lg shadow-glow">Reservar turno</a>
+                    <a href="#servicios" class="btn btn-outline btn-lg">Ver servicios</a>
+                </div>
+
+                <div class="social-proof">
+                    <div class="rating">
+                        <div class="stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                                data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <span>5.0 Satisfacción</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="clients">
+                        <strong>+200</strong>
+                        <span>Clientes Felices</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual float-animation">
+                <div class="visual-wrapper">
+                    <div class="visual-glow"></div>
+                    <img src="images/hero_visual.png" alt="Estética Integral">
+
+                    <div class="floating-badge delay-700">
+                        <div class="icon-box">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <div class="text">
+                            <p class="label">Resultados</p>
+                            <p class="value">Premium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator bounce">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="overline">Nuestros Tratamientos</span>
+                <h2>Experiencia de Lujo</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/service_1.png" alt="Manicura">
+                            <div class="card-overlay">
+                                <h3>Manicuría & Uñas</h3>
+                                <span class="link">Ver detalles &rarr;</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="icon-circle"><i data-lucide="gem"></i></div>
+                            <h3>Manicuría & Uñas</h3>
+                            <p>Prolijidad absoluta, diseño personalizado y cuidado profundo de tus manos.</p>
+                            <div class="tags">
+                                <span>Esmaltado</span><span>Cuidado Uñas</span><span>Diseño</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/service_2.png" alt="Pedicura">
+                            <div class="card-overlay">
+                                <h3>Pedicuría</h3>
+                                <span class="link">Ver detalles &rarr;</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="icon-circle"><i data-lucide="footprints"></i></div>
+                            <h3>Pedicuría</h3>
+                            <p>Bienestar total y estética cuidada para tus pies en un ambiente relajado.</p>
+                            <div class="tags">
+                                <span>Spa</span><span>Cuidado</span><span>Relajación</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/service_3.png" alt="Cejas">
+                            <div class="card-overlay">
+                                <h3>Cejas</h3>
+                                <span class="link">Ver detalles &rarr;</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="icon-circle"><i data-lucide="move"></i></div>
+                            <h3>Cejas</h3>
+                            <p>Diseño y perfilado que armoniza y resalta la expresión de tu rostro.</p>
+                            <div class="tags">
+                                <span>Perfilado</span><span>Diseño</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/service_4.png" alt="Pestañas">
+                            <div class="card-overlay">
+                                <h3>Pestañas</h3>
+                                <span class="link">Ver detalles &rarr;</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="icon-circle"><i data-lucide="eye"></i></div>
+                            <h3>Pestañas</h3>
+                            <p>Lifting y tinte para una mirada más intensa, natural y cautivadora.</p>
+                            <div class="tags">
+                                <span>Lifting</span><span>Volumen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/service_5.png" alt="Faciales">
+                            <div class="card-overlay">
+                                <h3>Faciales</h3>
+                                <span class="link">Ver detalles &rarr;</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="icon-circle"><i data-lucide="sun"></i></div>
+                            <h3>Faciales</h3>
+                            <p>Tratamientos para una piel luminosa, limpia y profundamente saludable.</p>
+                            <div class="tags">
+                                <span>Limpieza</span><span>Luminosidad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/service_6.png" alt="Depilación">
+                            <div class="card-overlay">
+                                <h3>Depilación</h3>
+                                <span class="link">Ver detalles &rarr;</span>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="icon-circle"><i data-lucide="feather"></i></div>
+                            <h3>Depilación</h3>
+                            <p>Piel extra suave con el máximo cuidado y confort durante la sesión.</p>
+                            <div class="tags">
+                                <span>Suavidad</span><span>Confort</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="overline">Galería</span>
+                <h2>Mis Trabajos Actuales</h2>
+                <div class="line"></div>
+                <p class="portfolio-subtitle">
+                    Descubre todos nuestros trabajos, historias y novedades diarias en Instagram.<br>
+                    <a href="https://www.instagram.com/mariana_moyano_esteticista/" target="_blank" class="ig-link"
+                        style="font-size: 1.5rem; margin-top: 1rem; display: inline-block;">
+                        @mariana_moyano_esteticista
+                    </a>
+                </p>
+            </div>
+
+            <div class="portfolio-actions">
+                <a href="https://www.instagram.com/mariana_moyano_esteticista/" target="_blank"
+                    class="btn btn-primary btn-lg shadow-glow">
+                    <i data-lucide="instagram" style="width: 20px; margin-right: 10px;"></i> Ver Galería en Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="about-bg-glow"></div>
+        <div class="container about-container">
+            <div class="about-card glass-panel">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>
+                            Pasión por la <br>
+                            <span class="text-primary">Excelencia Estética</span>
+                        </h2>
+                        <div class="about-description">
+                            <p>
+                                Bienvenidos a MM, donde la belleza se encuentra con el detalle. Soy <strong>Mariana
+                                    Moyano</strong>, especialista en
+                                realzar tu belleza natural a través de técnicas de vanguardia y un cuidado meticuloso.
+                            </p>
+                            <p>
+                                Mi filosofía es simple: cada tratamiento es una experiencia única diseñada para
+                                brindarte no solo resultados visibles, sino también un momento de bienestar absoluto.
+                            </p>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h4>Alta Gama</h4>
+                                <p>Productos Top</p>
+                            </div>
+                            <div class="stat">
+                                <h4>Higiene</h4>
+                                <p>Protocolos estrictos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <div class="image-glow"></div>
+                            <img src="images/about_image.png" alt="Sobre Mí">
+                            <img src="images/pattern_bg.png" class="pattern-decor" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Results -->
+    <section id="resultados" class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen mis clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-panel">
+                    <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i></div>
+                    <p>"La mejor atención. Mis uñas nunca estuvieron tan sanas y lindas. Super prolijo todo."</p>
+                    <cite>- Sofia M.</cite>
+                </div>
+                <div class="testimonial-card glass-panel">
+                    <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i></div>
+                    <p>"Me hice perfilado de cejas y lifting, me cambió la mirada totalmente. Amo el resultado."</p>
+                    <cite>- Valentina R.</cite>
+                </div>
+                <div class="testimonial-card glass-panel">
+                    <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i></div>
+                    <p>"El lugar es divino, super relajante y la limpieza facial me dejó la piel nueva. Recomiendo."</p>
+                    <cite>- Camila L.</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-pattern"></div>
+                <h2>¿Lista para brillar?</h2>
+                <p>Reserva tu cita hoy y regalate ese momento de cuidado que te mereces.</p>
+                <a href="#" class="btn btn-primary btn-lg shadow-glow">Agendar cita por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.svg" alt="MM">
+                <span>MM Estética</span>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 MM Centro de Estética Integral. Todos los derechos reservados.
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="facebook"></i></a>
+                <a href="#"><i data-lucide="message-circle"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
